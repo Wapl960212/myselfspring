@@ -1,6 +1,5 @@
-<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,5 +9,81 @@
         유저리스트
         <strong th:text="1+1"></strong>
     </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>num</th>
+                <th>이름</th>
+                <th>급여</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td><a href="detail.do?userNo=1">홀길동01</a></td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a href="detail.do?userNo=2">홀길동02</a></td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a href="detail.do?userNo=3">홀길동03</a></td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a href="detail.do?userNo=4">홀길동04</a></td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a href="detail.do?userNo=5">홀길동05</a></td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><a href="detail.do?userNo=6">홀길동06</a></td>
+            <td>6000</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><a href="detail.do?userNo=7">홀길동07</a></td>
+            <td>7000</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><a href="detail.do?userNo=8">홀길동08</a></td>
+            <td>8000</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td><a href="detail.do?userNo=9">홀길동09</a></td>
+            <td>9000</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="detail.do?userNo=10">홀길동10</a></td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="detail.do?userNo=">잘못1(400)</a></td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="detail.do?userNo=삼">잘못2(400)</a></td>
+            <td>10000</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td><a href="detail.do?">잘못3(400)</a></td>
+            <td>10000</td>
+        </tr>
+        </tbody>
+    </table>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>유저 상세 페이지</h1>
+  <p>
+    param.userNo : <strong th:text="${param.userNo}"></strong>
+  </p>
+  <p>thymeleaf.param : queryString 의 파라미터를 저장하는 객체</p>
+  <p>
+      유저번호(user.getUserNo()):
+      <th:block th:text="${user.getUserNo()}"></th:block>
+  </p>
+  <p>
+      유저번호(user.userNo Get 생략 가능):
+      <th:block th:text="${user.userNo}"></th:block>
+  </p>
+  <p>
+    유저이름:
+     <th:block th:text="${user.name}"></th:block>
+  </p>
+  <p>
+      유조생일:
+      <th:block th:text="${#calendars.format(user.birth,'yyyy년mm월dd일')}"></th:block>
+  </p>
+  <p>
+      유저급여:
+      <th:block th:text="${user.sal}"></th:block>
+  </p>
+    <form method="podt" action="update.do">
+        <p><label>번호 :<input name="userNo" th:value="${user.userNo}" type="text"></label></p>
+        <p><label>이름 :<input name="name" th:value="${user.name}" type="text"></label></p>
+        <p><label>생일 :<input name="birth" th:value="${#calendars.format(user.birth,'yyyy-mm-dd')}" type="text"></label></p>
+        <p><label>급여 :<input name="sal" th:value="${user.sal}" type="text"></label></p>
+        <p>
+            <button>제출</button>
+        </p>
+    </form>
+</body>
+</html>
